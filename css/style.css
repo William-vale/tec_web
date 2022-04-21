@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho */
+header{
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    background-color: rgb(129, 133, 86);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    border: 1px solid rgb(0, 0, 0);
+    width: 80px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li, main section #elenco ul li{
+    margin: 2px 8px;
+    border-right: 1px solid;
+    padding-right: 15px;
+}
+
+#menu ul #novidades{
+    border-right: 1px solid transparent;
+}
+
+#barra_pesquisa{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    margin-left: -200px;
+}
+
+#barra_pesquisa img{
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+}
+
+#barra_pesquisa input{
+    background: transparent;
+    border: none;
+    padding: 0px 10px;
+    outline: none;
+    width: 200px;
+}
+
+#barra_pesquisa input::placeholder{
+    color: black;
+}
+
+/*  */
+
+main{
+    padding: 30px 20px;
+    background-color: rgb(197, 203, 139);
+}
+
+main #principal{
+    display: flex;
+}
+
+main h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+main #principal img{
+    width: 46vw;
+    height: 300px;
+    background-color: black;
+}
+
+main #principal section{
+    margin-left: 20px;
+    width: 45vw;
+}
+
+main #principal section h2{
+    margin-bottom: 10px;
+}
+
+main #principal section ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+main section #elenco{
+    margin-top: 10px;
+}
+
+main section #elenco ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+main section #elenco ul li{
+    margin-left: 0px;
+    margin-right: 7px;
+    padding-left: 7px;
+}
+
+main section #elenco ul #ator1 {
+    padding-left: 0px;    
+}
+
+main section #elenco ul #ator4 {
+    border-right: 1px solid transparent;
+}
+
+main section #avaliacao{
+    margin-top: 10px;
+}
+
+main section #avaliacao .estrelas{
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+main section #avaliacao #estrela5 {
+    color: rgb(91, 89, 89);
+}
+
+main #pontos {
+    margin-top: 25px;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+main #pontos .ponto {
+    width: 7px;
+    height: 7px;
+    margin: 2px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgb(97, 94, 94);
+}
+
+main #pontos #ponto1 {
+    background-color: #000;
+}
+
+/* Seção 2 */
+#secao2 {
+    width: 85,5%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 150px;
+    /* background-color: #0ff; */
+}
+
+#secao2 #destaque {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#secao2 #destaque #categoria_filmes{
+    width: 220px;
+}
+/* 
+#secao2 #img_destaques{
+    width: 100%;
+    height: 100%;
+    background-color: #faa;
+} */
