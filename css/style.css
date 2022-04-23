@@ -21,6 +21,7 @@ header{
     padding: 5px;
     font-size: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 #menu ul{
@@ -34,11 +35,17 @@ header{
     padding-right: 15px;
 }
 
+#menu ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #menu ul #novidades{
     border-right: 1px solid transparent;
 }
 
 #barra_pesquisa{
+    background-color: transparent;
     border: 1px solid;
     border-radius: 5px;
     padding: 4px;
@@ -51,7 +58,8 @@ header{
 #barra_pesquisa img{
     width: 20px;
     height: 20px;
-    background-color: aqua;
+    cursor: pointer;
+    /* background-color: aqua; */
 }
 
 #barra_pesquisa input{
@@ -121,7 +129,7 @@ main section #elenco ul li{
 }
 
 main section #elenco ul #ator1 {
-    padding-left: 0px;    
+    padding-left: 0px;
 }
 
 main section #elenco ul #ator4 {
@@ -129,16 +137,42 @@ main section #elenco ul #ator4 {
 }
 
 main section #avaliacao{
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 main section #avaliacao .estrelas{
+    display: flex;
+    flex-direction: row-reverse;
     margin-top: 5px;
     font-size: 25px;
 }
 
 main section #avaliacao #estrela5 {
     color: rgb(91, 89, 89);
+}
+
+main section #avaliacao .estrelas span{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+main section #avaliacao .estrelas span:hover ~ span,
+main section #avaliacao .estrelas span:hover ~ #estrela5,
+main section #avaliacao .estrelas span:hover,
+main section #avaliacao #estrela5:hover{
+    color: gold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-shadow: 1px 1px 0px black,
+                 -1px -1px 0px black,
+                 -1px 1px 0px black,
+                 1px -1px 0px black;
 }
 
 main #pontos {
@@ -156,6 +190,13 @@ main #pontos .ponto {
     border-radius: 100%;
     display: inline-block;
     background-color: rgb(97, 94, 94);
+    cursor: pointer;
+}
+
+main #pontos .ponto:hover {
+    cursor: pointer;
+    background-color: black;
+    transition: all 0.3s
 }
 
 main #pontos #ponto1 {
@@ -166,22 +207,94 @@ main #pontos #ponto1 {
 #secao2 {
     width: 85,5%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 20px 150px;
     /* background-color: #0ff; */
 }
 
-#secao2 #destaque {
+#secao2 #destaque_header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-#secao2 #destaque #categoria_filmes{
+#secao2 #destaque_header select{
     width: 220px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 1px black;
+    padding: 5px;
 }
-/* 
-#secao2 #img_destaques{
+
+#secao2 #destaque_header select:hover{
+    background-color: #ddd;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#secao2 #destaque_header select option{
+    height: 50px;
+    font-size: 1.1em;
     width: 100%;
-    height: 100%;
-    background-color: #faa;
-} */
+    padding-left: 10px;
+}
+
+#secao2 #img_destaques{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+#secao2 #img_destaques img{
+      height: 300px;
+      width: 210px;
+      background-color: gray;
+      transition: transform 0.3s;
+}
+
+#secao2 #img_destaques img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.carregar_mais{
+  background-color: #444;
+  color: white;
+  max-width: 200px;
+  display: flex;
+  padding: 0px 7px;
+  text-align: center;
+  border-radius: 5px;
+  align-self: flex-end;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carregar_mais:hover{
+  background-color: #333;
+  transition: background-color 0.2s;
+}
+
+.carregar_mais span{
+  font-size: 1.5em;
+  margin: 0px 5px 0px 0px;
+  padding: 0px;
+  text-align: center;
+}
+.carregar_mais label{
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
