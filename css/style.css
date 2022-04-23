@@ -114,7 +114,7 @@ main #principal section ul{
 }
 
 main section #elenco{
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 main section #elenco ul{
@@ -136,7 +136,7 @@ main section #elenco ul #ator4 {
     border-right: 1px solid transparent;
 }
 
-main section #avaliacao{
+#avaliacao{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -146,26 +146,26 @@ main section #avaliacao{
   margin-top: 10px;
 }
 
-main section #avaliacao .estrelas{
+.estrelas{
     display: flex;
     flex-direction: row-reverse;
     margin-top: 5px;
     font-size: 25px;
 }
 
-main section #avaliacao #estrela5 {
+#estrela5 {
     color: rgb(91, 89, 89);
 }
 
-main section #avaliacao .estrelas span{
+.estrelas span{
   cursor: pointer;
   transition: all 0.3s;
 }
 
-main section #avaliacao .estrelas span:hover ~ span,
-main section #avaliacao .estrelas span:hover ~ #estrela5,
-main section #avaliacao .estrelas span:hover,
-main section #avaliacao #estrela5:hover{
+.estrelas span:hover ~ span,
+.estrelas span:hover ~ #estrela5,
+.estrelas span:hover,
+#estrela5:hover{
     color: gold;
     cursor: pointer;
     transition: all 0.3s;
@@ -205,7 +205,6 @@ main #pontos #ponto1 {
 
 /* Seção 2 */
 #secao2 {
-    width: 85,5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,6 +218,11 @@ main #pontos #ponto1 {
     justify-content: space-between;
     align-items: center;
 }
+
+#secao2 #destaque_header h2{
+    font-size: 2em;
+}
+
 #secao2 #destaque_header select{
     width: 220px;
     height: 35px;
@@ -249,7 +253,8 @@ main #pontos #ponto1 {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 30px;
 }
 
 #secao2 #img_destaques img{
@@ -257,6 +262,7 @@ main #pontos #ponto1 {
       width: 210px;
       background-color: gray;
       transition: transform 0.3s;
+      object-fit: cover;
 }
 
 #secao2 #img_destaques img:hover{
@@ -297,4 +303,69 @@ main #pontos #ponto1 {
   padding: 0;
   margin: 0;
   cursor: pointer;
+}
+
+#secao2 #ultimas_avaliacoes{
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px 150px; */
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#secao2 #ultimas_avaliacoes h2{
+    font-size: 2em;
+    margin: 10px 0px 40px 0px;
+}
+
+#secao2 #ultimas_avaliacoes #avaliacoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 0px 20px 0px 0px;
+}
+
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao:nth-child(3){
+    margin: 0px;
+}
+
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0px 20px 0px 0px;
+}
+
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao p{
+    margin-bottom: 15px;
+}
+
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao h3{
+    font-size: 1.5em;
+    margin: 5px 0px 20px 0px;
+}
+
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao .estrelas{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao .estrelas span{
+    margin: auto 5px auto 0px;
+    font-size: 0.9em;
+}
+
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao .estrelas date{
+    font-size: 0.6em;
+    margin: auto 10px auto 0px;
+    font-weight: bold;
+    align-self: flex-start;
 }
