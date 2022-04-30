@@ -9,23 +9,24 @@ header{
     width: auto;
     height: auto;
     padding: 10px 30px;
-    background-color: rgb(129, 133, 86);
+    background-color:black;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #logo{
-    border: 1px solid rgb(0, 0, 0);
     width: 80px;
     padding: 5px;
     font-size: 20px;
     text-align: center;
+    border-radius: 8px;
 }
 
 #menu ul{
     display: flex;
     list-style: none;
+    color: aliceblue;
 }
 
 #menu ul li, main section #elenco ul li{
@@ -56,21 +57,21 @@ header{
 
 #barra_pesquisa input{
     background: transparent;
-    border: none;
+    border: white;
     padding: 0px 10px;
     outline: none;
     width: 200px;
 }
 
 #barra_pesquisa input::placeholder{
-    color: black;
+    color: white;
 }
 
 /*  */
 
 main{
     padding: 30px 20px;
-    background-color: rgb(197, 203, 139);
+    background-color:gainsboro;
 }
 
 main #principal{
@@ -82,10 +83,14 @@ main h1{
     font-weight: bold;
     margin-bottom: 40px;
 }
+video {
+    width: 50%;
+    height: auto;
+  }
 
 main #principal img{
-    width: 46vw;
-    height: 300px;
+    width: 40%;
+    height: auto;
     background-color: black;
 }
 
