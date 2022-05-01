@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Cabeçalho */
-header{
+header {
     width: auto;
     height: auto;
     padding: 10px 30px;
@@ -15,7 +15,7 @@ header{
     justify-content: space-between;
 }
 
-#logo{
+#logo {
     border: 1px solid rgb(0, 0, 0);
     width: 80px;
     padding: 5px;
@@ -24,27 +24,28 @@ header{
     cursor: pointer;
 }
 
-#menu ul{
+#menu ul {
     display: flex;
     list-style: none;
 }
 
-#menu ul li, main section #elenco ul li{
+#menu ul li,
+main section #elenco ul li {
     margin: 2px 8px;
     border-right: 1px solid;
     padding-right: 15px;
 }
 
-#menu ul li:hover{
-  text-decoration: underline;
-  cursor: pointer;
+#menu ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-#menu ul #novidades{
+#menu ul #novidades {
     border-right: 1px solid transparent;
 }
 
-#barra_pesquisa{
+#barra_pesquisa {
     background-color: transparent;
     border: 1px solid;
     border-radius: 5px;
@@ -55,14 +56,14 @@ header{
     margin-left: -200px;
 }
 
-#barra_pesquisa img{
+#barra_pesquisa img {
     width: 20px;
     height: 20px;
     cursor: pointer;
     /* background-color: aqua; */
 }
 
-#barra_pesquisa input{
+#barra_pesquisa input {
     background: transparent;
     border: none;
     padding: 0px 10px;
@@ -70,59 +71,59 @@ header{
     width: 200px;
 }
 
-#barra_pesquisa input::placeholder{
+#barra_pesquisa input::placeholder {
     color: black;
 }
 
 /*  */
 
-main{
+main {
     padding: 30px 20px;
     background-color: rgb(197, 203, 139);
 }
 
-main #principal{
+main #principal {
     display: flex;
 }
 
-main h1{
+main h1 {
     text-align: center;
     font-weight: bold;
     margin-bottom: 40px;
 }
 
-main #principal img{
+main #principal img {
     width: 46vw;
     height: 300px;
     background-color: black;
 }
 
-main #principal section{
+main #principal section {
     margin-left: 20px;
     width: 45vw;
 }
 
-main #principal section h2{
+main #principal section h2 {
     margin-bottom: 10px;
 }
 
-main #principal section ul{
+main #principal section ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-main section #elenco{
+main section #elenco {
     margin-top: 15px;
 }
 
-main section #elenco ul{
+main section #elenco ul {
     display: flex;
     justify-content: flex-start;
 }
 
-main section #elenco ul li{
+main section #elenco ul li {
     margin-left: 0px;
     margin-right: 7px;
     padding-left: 7px;
@@ -136,17 +137,17 @@ main section #elenco ul #ator4 {
     border-right: 1px solid transparent;
 }
 
-#avaliacao{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: flex-flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: 10px;
+#avaliacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-.estrelas{
+.estrelas {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 5px;
@@ -157,22 +158,22 @@ main section #elenco ul #ator4 {
     color: rgb(91, 89, 89);
 }
 
-.estrelas span{
-  cursor: pointer;
-  transition: all 0.3s;
+.estrelas span {
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
-.estrelas span:hover ~ span,
-.estrelas span:hover ~ #estrela5,
+.estrelas span:hover~span,
+.estrelas span:hover~#estrela5,
 .estrelas span:hover,
-#estrela5:hover{
+#estrela5:hover {
     color: gold;
     cursor: pointer;
     transition: all 0.3s;
     text-shadow: 1px 1px 0px black,
-                 -1px -1px 0px black,
-                 -1px 1px 0px black,
-                 1px -1px 0px black;
+        -1px -1px 0px black,
+        -1px 1px 0px black,
+        1px -1px 0px black;
 }
 
 main #pontos {
@@ -219,11 +220,11 @@ main #pontos #ponto1 {
     align-items: center;
 }
 
-#secao2 #destaque_header h2{
+#secao2 #destaque_header h2 {
     font-size: 2em;
 }
 
-#secao2 #destaque_header select{
+#secao2 #destaque_header select {
     width: 220px;
     height: 35px;
     border-radius: 5px;
@@ -232,20 +233,20 @@ main #pontos #ponto1 {
     padding: 5px;
 }
 
-#secao2 #destaque_header select:hover{
+#secao2 #destaque_header select:hover {
     background-color: #ddd;
     transition: all 0.2s;
     cursor: pointer;
 }
 
-#secao2 #destaque_header select option{
+#secao2 #destaque_header select option {
     height: 50px;
     font-size: 1.1em;
     width: 100%;
     padding-left: 10px;
 }
 
-#secao2 #img_destaques{
+#secao2 #img_destaques {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -257,55 +258,56 @@ main #pontos #ponto1 {
     margin-bottom: 30px;
 }
 
-#secao2 #img_destaques img{
-      height: 300px;
-      width: 210px;
-      background-color: gray;
-      transition: transform 0.3s;
-      object-fit: cover;
+#secao2 #img_destaques img {
+    height: 300px;
+    width: 210px;
+    background-color: gray;
+    transition: transform 0.3s;
+    object-fit: cover;
 }
 
-#secao2 #img_destaques img:hover{
-  transform: scale(1.05);
-  transition: transform 0.3s;
-  cursor: pointer;
+#secao2 #img_destaques img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    cursor: pointer;
 }
 
-.carregar_mais{
-  background-color: #444;
-  color: white;
-  max-width: 200px;
-  display: flex;
-  padding: 0px 7px;
-  text-align: center;
-  border-radius: 5px;
-  align-self: flex-end;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.carregar_mais {
+    background-color: #444;
+    color: white;
+    max-width: 200px;
+    display: flex;
+    padding: 0px 7px;
+    text-align: center;
+    border-radius: 5px;
+    align-self: flex-end;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-.carregar_mais:hover{
-  background-color: #333;
-  transition: background-color 0.2s;
+.carregar_mais:hover {
+    background-color: #333;
+    transition: background-color 0.2s;
 }
 
-.carregar_mais span{
-  font-size: 1.5em;
-  margin: 0px 5px 0px 0px;
-  padding: 0px;
-  text-align: center;
-}
-.carregar_mais label{
-  font-size: 0.8em;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
+.carregar_mais span {
+    font-size: 1.5em;
+    margin: 0px 5px 0px 0px;
+    padding: 0px;
+    text-align: center;
 }
 
-#secao2 #ultimas_avaliacoes{
+.carregar_mais label {
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+#secao2 #ultimas_avaliacoes {
     display: flex;
     flex-direction: column;
     /* padding: 20px 150px; */
@@ -313,12 +315,12 @@ main #pontos #ponto1 {
     align-items: flex-start;
 }
 
-#secao2 #ultimas_avaliacoes h2{
+#secao2 #ultimas_avaliacoes h2 {
     font-size: 2em;
     margin: 10px 0px 40px 0px;
 }
 
-#secao2 #ultimas_avaliacoes #avaliacoes{
+#secao2 #ultimas_avaliacoes #avaliacoes {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -326,50 +328,94 @@ main #pontos #ponto1 {
     margin-bottom: 30px;
 }
 
-#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao{
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao {
     display: flex;
     flex-direction: row;
     width: auto;
     margin: 0px 20px 0px 0px;
 }
 
-#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao:nth-child(3){
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao:nth-child(3) {
     margin: 0px;
 }
 
-#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao img{
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao img {
     width: 50px;
     height: 50px;
     border-radius: 100%;
     margin: 0px 20px 0px 0px;
 }
 
-#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao p{
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao p {
     margin-bottom: 15px;
 }
 
-#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao h3{
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao h3 {
     font-size: 1.5em;
     margin: 5px 0px 20px 0px;
 }
 
-#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao .estrelas{
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao .estrelas {
     justify-content: flex-end;
     align-items: center;
 }
 
-#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao .estrelas span{
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao .estrelas span {
     margin: auto 5px auto 0px;
     font-size: 0.9em;
 }
 
-#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao .estrelas date{
+#secao2 #ultimas_avaliacoes #avaliacoes .avaliacao .texto-avaliacao .estrelas date {
     font-size: 0.6em;
     margin: auto 10px auto 0px;
     font-weight: bold;
     align-self: flex-start;
 }
 
+/* Parte da Flaviane e Jonas */
+
+.secao3 h1 {
+    font-size: 2em;
+    margin: 10px 0px 40px 0px;
+
+}
+
+.entrevista {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 48em) {
+    .entrevista {
+        flex-wrap: nowrap;
+    }
+}
+
+.filmes {
+    flex: 33.33%;
+}
+
+.cabecalho {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.entrevista .filmes .cabecalho img {
+    height: 200px;
+    width: 310px;
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+
+.entrevista .filmes .cabecalho img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
 
 
 #secao4 {
@@ -378,24 +424,24 @@ main #pontos #ponto1 {
     padding: 20px 150px;
 }
 
-#secao4 #novidades{
+#secao4 #novidades {
     max-width: 65%;
     margin-right: 25px;
 }
 
-#secao4 #novidades h2{
+#secao4 #novidades h2 {
     font-size: 2em;
     margin: 10px 0px 40px 0px;
 }
 
-#img_novidades ul{
+#img_novidades ul {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
     height: 135px;
 }
 
-#secao4 #img_novidades img{
+#secao4 #img_novidades img {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
@@ -406,78 +452,79 @@ main #pontos #ponto1 {
     object-fit: cover;
 }
 
-#secao4 #img_novidades img:hover{
+#secao4 #img_novidades img:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
     cursor: pointer;
-  }
-
-#novidade1{
-    display: flex;
-    border-bottom: rgb(162, 162, 162) solid;
-    max-width: fit-content;
 }
 
-#novidade2{
+#novidade1 {
+    display: flex;
+    border-bottom: rgb(162, 162, 162) solid;
+    max-width: max-content;
+}
+
+#novidade2 {
     display: flex;
     border-bottom: rgb(162, 162, 162) solid;
     max-width: fit-content;
     margin-top: 15px;
 }
 
-#novidade3{
+#novidade3 {
     display: flex;
     max-width: fit-content;
     margin-top: 15px;
 }
 
-#novidade1 div{
+#novidade1 div {
     font-size: 15px;
     padding-top: 10px;
 }
 
-#novidade1 button{
+#novidade1 button {
     color: white;
     background-color: gray;
     padding: 3px 15px 1px 15px;
     border-radius: 15px;
 }
 
-#novidade2 div{
+#novidade2 div {
     font-size: 15px;
     padding-top: 10px;
 }
 
-#novidade2 button{
+#novidade2 button {
     color: white;
     background-color: gray;
     padding: 3px 15px 1px 15px;
     border-radius: 15px;
 }
 
-#novidade3 div{
+#novidade3 div {
     font-size: 15px;
     padding-top: 10px;
 }
 
-#novidade3 button{
+#novidade3 button {
     color: white;
     background-color: gray;
     padding: 3px 15px 1px 15px;
     border-radius: 15px;
 }
 
-@media(max-width: 1288px){
-    #img_novidades ul{
+@media(max-width: 1288px) {
+    #img_novidades ul {
         overflow: auto;
     }
-    #img_novidades button{
+
+    #img_novidades button {
         display: none;
     }
 }
 
 
-#secao4 .sobre h2{
+#secao4 .sobre h2 {
     font-size: 2em;
     margin: 10px 0px 30px 0px;
 }
@@ -486,19 +533,19 @@ main #pontos #ponto1 {
     flex-basis: 35%;
 }
 
-.sobre-content h2{
+.sobre-content h2 {
     margin-bottom: 15px;
 }
 
 
-.editorial h2{
+.editorial h2 {
     margin-top: 20px;
-    padding-top: 20px;   
+    padding-top: 20px;
 }
 
 .editorial-content {
     margin-bottom: 15px;
-    margin-top: 15px;    
+    margin-top: 15px;
 }
 
 .editorial ul {
@@ -514,10 +561,10 @@ main #pontos #ponto1 {
 .redes-sociais {
     list-style: none;
     font-size: 12px;
-    
+
 }
 
-.redes-sociais i{
+.redes-sociais i {
     font-size: 30px;
     padding-right: 20px;
 }
