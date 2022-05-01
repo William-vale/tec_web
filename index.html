@@ -1,58 +1,124 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Atividade 2</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
 
-    <body>
-        <header>
-            <div id="logo">
-                Logo
-            </div>
-            <nav id="menu">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1738bca927.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            Logo
+        </div>
+        <nav id="menu">
+            <ul>
+                <li>lançamentos</li>
+                <li>em destaque</li>
+                <li>avaliações</li>
+                <li>entrevista & makingof</li>
+                <li id="novidades">novidades</li>
+            </ul>
+        </nav>
+        <span id="barra_pesquisa">
+            <img src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-noir.png" alt="">
+            <input type="text" placeholder="Pesquisar filme">
+        </span>
+    </header>
+
+    <main>
+        <h1>Lançamentos</h1>
+        <div id="principal">
+            <img src="https://media.istockphoto.com/vectors/video-player-template-for-web-or-mobile-apps-blogging-vector-id1310634705?k=20&m=1310634705&s=612x612&w=0&h=6ezbTj2MgmVwmQEx6zqmage2m2bWwcRSjiFSQatczK4="
+                alt="">
+            <section>
+                <h2>Nome do Filme</h2>
+                <p><b>Sinopse:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis bibendum
+                    sapien, eu vehicula turpis lacinia eget. Proin porta eget ante at vestibulum. Phasellus fermentum
+                    bibendum odio at viverra. Vestibulum id facilisis tellus. Nam lorem nisi, euismod et est in, iaculis
+                    rhoncus nulla. Pellentesque egestas efficitur efficitur. Donec consequat, nisi at egestas luctus,
+                    diam odio laoreet nulla, nec aliquet lectus nisi id nulla.
+                </p>
+
                 <ul>
-                    <li>lançamentos</li>
-                    <li>em destaque</li>
-                    <li>avaliações</li>
-                    <li>entrevista & makingof</li>
-                    <li id="novidades">novidades</li>
+                    <li><b>Diretor:</b> Nome do Diretor</li>
+                    <li><b>Roteiro:</b> Nome do Roterista</li>
+                    <li><b>Estreia:</b> 2020</li>
                 </ul>
-            </nav>
-            <span id="barra_pesquisa">
-                <img src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-noir.png" alt="">
-                <input type="text" placeholder="Pesquisar filme">
-            </span>
-        </header>
 
-        <main>
-            <h1>Lançamentos</h1>
-            <div id="principal">
-                <img src="https://media.istockphoto.com/vectors/video-player-template-for-web-or-mobile-apps-blogging-vector-id1310634705?k=20&m=1310634705&s=612x612&w=0&h=6ezbTj2MgmVwmQEx6zqmage2m2bWwcRSjiFSQatczK4=" alt="">
-                <section>
-                    <h2>Nome do Filme</h2>
-                    <p><b>Sinopse:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis bibendum sapien, eu vehicula turpis lacinia eget. Proin porta eget ante at vestibulum. Phasellus fermentum bibendum odio at viverra. Vestibulum id facilisis tellus. Nam lorem nisi, euismod et est in, iaculis rhoncus nulla. Pellentesque egestas efficitur efficitur. Donec consequat, nisi at egestas luctus, diam odio laoreet nulla, nec aliquet lectus nisi id nulla.
-                    </p>
-
+                <div id="elenco">
+                    <b>Elenco: </b>
                     <ul>
-                        <li><b>Diretor:</b> Nome do Diretor</li>
-                        <li><b>Roteiro:</b> Nome do Roterista</li>
-                        <li><b>Estreia:</b> 2020</li>
+                        <li id="ator1">Nome do Ator 1</li>
+                        <li>Nome do Ator 2</li>
+                        <li>Nome do Ator 3</li>
+                        <li id="ator4">Nome do Ator 4</li>
                     </ul>
+                </div>
 
-                    <div id="elenco">
-                        <b>Elenco: </b>
-                        <ul>
-                            <li id="ator1">Nome do Ator 1</li>
-                            <li>Nome do Ator 2</li>
-                            <li>Nome do Ator 3</li>
-                            <li id="ator4">Nome do Ator 4</li>
-                        </ul>
+                <div id="avaliacao">
+                    <b>Avaliação:</b>
+                    <div class="estrelas">
+                        <span id="estrela5">&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
                     </div>
+                </div>
+            </section>
+        </div>
+        <div id="pontos">
+            <div class="ponto" id="ponto1"></div>
+            <div class="ponto"></div>
+            <div class="ponto"></div>
+            <div class="ponto"></div>
+        </div>
+    </main>
 
-                    <div id="avaliacao">
-                        <b>Avaliação:</b>
+    <section id="secao2">
+        <div id="destaque_header">
+            <h2>Em destaque</h2>
+            <select id="categoria_filmes">
+                <option value="" disabled selected hidden>Categoria: TODOS</option>
+                <option value="">Aventura</option>
+                <option value="">Romance</option>
+                <option value="">Comedia</option>
+            </select>
+        </div>
+        <div id="img_destaques">
+            <img
+                src="https://previews.123rf.com/images/raulalmu/raulalmu1610/raulalmu161001225/64629427-galerie-symbol-einfache-symbol-galerie-symbolgalerie-linie-hochwertige-umriss-pictigram-f%C3%BCr-design-w.jpg">
+            <img
+                src="https://previews.123rf.com/images/raulalmu/raulalmu1610/raulalmu161001225/64629427-galerie-symbol-einfache-symbol-galerie-symbolgalerie-linie-hochwertige-umriss-pictigram-f%C3%BCr-design-w.jpg">
+            <img
+                src="https://previews.123rf.com/images/raulalmu/raulalmu1610/raulalmu161001225/64629427-galerie-symbol-einfache-symbol-galerie-symbolgalerie-linie-hochwertige-umriss-pictigram-f%C3%BCr-design-w.jpg">
+            <img
+                src="https://previews.123rf.com/images/raulalmu/raulalmu1610/raulalmu161001225/64629427-galerie-symbol-einfache-symbol-galerie-symbolgalerie-linie-hochwertige-umriss-pictigram-f%C3%BCr-design-w.jpg">
+        </div>
+        <div class="carregar_mais">
+            <span>+</span>
+            <label>Carregar mais filmes</label>
+        </div>
+
+        <div id="ultimas_avaliacoes">
+            <h2>Últimas Avaliações</h2>
+            <div id="avaliacoes">
+
+                <div class="avaliacao">
+                    <img src="https://www.fiscalti.com.br/wp-content/uploads/2021/02/default-user-image.png">
+                    <div class="texto-avaliacao">
+                        <h3>Nome do Avaliador</h3>
+                        <p><b>Avaliação: </b>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis bibendum sapien,
+                            eu vehicula turpis lacinia eget. Proin porta eget ante at vestibulum. Phasellus fermentum
+                            bibendum odio at viverra. Vestibulum id facilisis tellus. Nam lorem nisi, euismod et est in,
+                            iaculis rhoncus nulla.
+                        </p>
+
                         <div class="estrelas">
+                            <date>02/09/2020</date>
                             <span id="estrela5">&#9733;</span>
                             <span>&#9733;</span>
                             <span>&#9733;</span>
@@ -60,105 +126,156 @@
                             <span>&#9733;</span>
                         </div>
                     </div>
-                </section>
-            </div>
-            <div id="pontos">
-                <div class="ponto" id="ponto1"></div>
-                <div class="ponto"></div>
-                <div class="ponto"></div>
-                <div class="ponto"></div>
-            </div>
-        </main>
+                </div>
 
-        <section id="secao2">
-            <div id="destaque_header">
-                <h2>Em destaque</h2>
-                <select id="categoria_filmes">
-                    <option value="" disabled selected hidden>Categoria: TODOS</option>
-                    <option value="">Aventura</option>
-                    <option value="">Romance</option>
-                    <option value="">Comedia</option>
-                </select>
+                <div class="avaliacao">
+                    <img src="https://www.fiscalti.com.br/wp-content/uploads/2021/02/default-user-image.png">
+                    <div class="texto-avaliacao">
+                        <h3>Nome do Avaliador</h3>
+                        <p><b>Avaliação: </b>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis bibendum sapien,
+                            eu vehicula turpis lacinia eget. Proin porta eget ante at vestibulum. Phasellus fermentum
+                            bibendum odio at viverra. Vestibulum id facilisis tellus. Nam lorem nisi, euismod et est in,
+                            iaculis rhoncus nulla.
+                        </p>
+
+                        <div class="estrelas">
+                            <date>02/09/2020</date>
+                            <span id="estrela5">&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="avaliacao">
+                    <img src="https://www.fiscalti.com.br/wp-content/uploads/2021/02/default-user-image.png">
+                    <div class="texto-avaliacao">
+                        <h3>Nome do Avaliador</h3>
+                        <p><b>Avaliação: </b>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis bibendum sapien,
+                            eu vehicula turpis lacinia eget. Proin porta eget ante at vestibulum. Phasellus fermentum
+                            bibendum odio at viverra. Vestibulum id facilisis tellus. Nam lorem nisi, euismod et est in,
+                            iaculis rhoncus nulla.
+                        </p>
+
+                        <div class="estrelas">
+                            <date>02/09/2020</date>
+                            <span id="estrela5">&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div id="img_destaques">
-                <img src="https://previews.123rf.com/images/raulalmu/raulalmu1610/raulalmu161001225/64629427-galerie-symbol-einfache-symbol-galerie-symbolgalerie-linie-hochwertige-umriss-pictigram-f%C3%BCr-design-w.jpg">
-                <img src="https://previews.123rf.com/images/raulalmu/raulalmu1610/raulalmu161001225/64629427-galerie-symbol-einfache-symbol-galerie-symbolgalerie-linie-hochwertige-umriss-pictigram-f%C3%BCr-design-w.jpg">
-                <img src="https://previews.123rf.com/images/raulalmu/raulalmu1610/raulalmu161001225/64629427-galerie-symbol-einfache-symbol-galerie-symbolgalerie-linie-hochwertige-umriss-pictigram-f%C3%BCr-design-w.jpg">
-                <img src="https://previews.123rf.com/images/raulalmu/raulalmu1610/raulalmu161001225/64629427-galerie-symbol-einfache-symbol-galerie-symbolgalerie-linie-hochwertige-umriss-pictigram-f%C3%BCr-design-w.jpg">
-            </div>
+
             <div class="carregar_mais">
                 <span>+</span>
-                <label>Carregar mais filmes</label>
+                <label>Carregar mais avaliações</label>
             </div>
+        </div>
+    </section>
 
-            <div id="ultimas_avaliacoes">
-                <h2>Últimas Avaliações</h2>
-                <div id="avaliacoes">
 
-                    <div class="avaliacao">
-                        <img src="https://www.fiscalti.com.br/wp-content/uploads/2021/02/default-user-image.png">
-                        <div class="texto-avaliacao">
-                            <h3>Nome do Avaliador</h3>
-                            <p><b>Avaliação: </b>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis bibendum sapien, eu vehicula turpis lacinia eget. Proin porta eget ante at vestibulum. Phasellus fermentum bibendum odio at viverra. Vestibulum id facilisis tellus. Nam lorem nisi, euismod et est in, iaculis rhoncus nulla.
-                            </p>
+    <section id="secao4">
 
-                            <div class="estrelas">
-                                <date>02/09/2020</date>
-                                <span id="estrela5">&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                            </div>
+        <div id="novidades">
+            <h2>Novidades</h2>
+            <div id="img_novidades">
+                <div id="novidade1">
+                    <img src="Animais Fantásticos.jpg">
+                    <ul>
+                        <h3>Animais Fantásticos</h3>
+                        <p>O professor Alvo Dumbledore Dublado – sabe que o poderoso mago das trevas Gellert Grindelwald
+                            está se movimentando para assumir o controle do mundo mágico. Mas com tantas ameaças, quanto
+                            tempo poderá Dumbledore permanecer à margem do embate?</p>
+                        <div>
+                            <button>ação</button>
+                            <button>aventura</button>
+                            <button>fantasia</button>
                         </div>
-                    </div>
-
-                    <div class="avaliacao">
-                        <img src="https://www.fiscalti.com.br/wp-content/uploads/2021/02/default-user-image.png">
-                        <div class="texto-avaliacao">
-                            <h3>Nome do Avaliador</h3>
-                            <p><b>Avaliação: </b>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis bibendum sapien, eu vehicula turpis lacinia eget. Proin porta eget ante at vestibulum. Phasellus fermentum bibendum odio at viverra. Vestibulum id facilisis tellus. Nam lorem nisi, euismod et est in, iaculis rhoncus nulla.
-                            </p>
-
-                            <div class="estrelas">
-                                <date>02/09/2020</date>
-                                <span id="estrela5">&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="avaliacao">
-                        <img src="https://www.fiscalti.com.br/wp-content/uploads/2021/02/default-user-image.png">
-                        <div class="texto-avaliacao">
-                            <h3>Nome do Avaliador</h3>
-                            <p><b>Avaliação: </b>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis bibendum sapien, eu vehicula turpis lacinia eget. Proin porta eget ante at vestibulum. Phasellus fermentum bibendum odio at viverra. Vestibulum id facilisis tellus. Nam lorem nisi, euismod et est in, iaculis rhoncus nulla.
-                            </p>
-
-                            <div class="estrelas">
-                                <date>02/09/2020</date>
-                                <span id="estrela5">&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                            </div>
-                        </div>
-                    </div>
-
+                    </ul>
                 </div>
-
-                <div class="carregar_mais">
-                    <span>+</span>
-                    <label>Carregar mais avaliações</label>
+                <div id="novidade2">
+                    <img src="Sonic 2.jpg">
+                    <ul>
+                        <h3>Sonic 2</h3>
+                        <p>Depois de se estabelecer em Green Hills, Sonic está pronto para mais liberdade e deixar sua
+                            marca como um herói, e Tom e Maddie concordam em deixá-lo em casa enquanto vão de férias.
+                            Sonic se une a um novo companheiro, Tails.</p>
+                        <div>
+                            <button>ação</button>
+                            <button>aventura</button>
+                            <button>fantasia</button>
+                        </div>
+                    </ul>
+                </div>
+                <div id="novidade3">
+                    <img src="Cidade perdida.jpg">
+                    <ul>
+                        <h3>Cidade perdida</h3>
+                        <p>A brilhante, porém reclusa autora Loretta Sage (Sandra Bullock) escreve sobre lugares
+                            exóticos em seus romances populares de aventura, cujas capas são estreladas pelo belo modelo
+                            Alan (Channing Tatum).</p>
+                        <div>
+                            <button>ação</button>
+                            <button>aventura</button>
+                            <button>comédia</button>
+                        </div>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+
+
+        <div class="sobre">
+            <div class="sobre-content">
+                <h2>Sobre</h2>
+                <p>
+                    O maior site do mundo e que sá do universo do cinema, contendo todos os tipos de genéros desde
+                    aqueles que você sonhou e esqueceu, até os clássicos da sessão da tarde, como por exemplo <strong>De
+                        repente 30</strong>, então não perca tempo lendo esse texto inútil se inscreva e venha conhecer
+                    o maior site do mundo e que sá do universo do cinema. E claro, nos siga no SIGAA para ver mais
+                    séries de equações ordinárias de sofrimento, e pra terminar de encher linguiça, FIM.
+                </p>
+            </div>
+            
+            <div class="editorial">
+                <h2>Editorial</h2>
+                <div class ul="editorial-content">
+                    <ul>
+                        <li>
+                            <p><i class="fa-solid fa-user"></i><strong> Redação</strong>: Waklio Neto</p>
+                        </li>
+                        <li>
+                            <p><i class="fa-solid fa-user"></i><strong> Pesquisa</strong>: Centro de Pesquisa Gotham</p>
+                        </li>
+                        <li>
+                            <p><i class="fa-solid fa-user"></i><strong> Gerente Geral</strong>: Aquele Que Não Deve Ser
+                                Nomeado</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="redes-sociais">
+                <!--teste comentario-->
+                <h2>redes sociais:</h2>
+
+                <i class="fa-brands fa-facebook-square"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
