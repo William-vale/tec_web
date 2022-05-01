@@ -371,14 +371,21 @@ main #pontos #ponto1 {
     font-weight: bold;
     align-self: flex-start;
 }
-/* Parte da Flaviane e Jonas */
-
 
 /* Parte da Flaviane e Jonas */
+
+.secao3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 150px;
+    background-color: rgb(129, 133, 86);
+}
 
 .secao3 h1 {
     font-size: 2em;
     margin: 10px 0px 40px 0px;
+
 }
 
 .entrevista {
@@ -388,6 +395,8 @@ main #pontos #ponto1 {
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
+
+
 }
 
 @media (min-width: 48em) {
@@ -462,7 +471,7 @@ main #pontos #ponto1 {
 #novidade1 {
     display: flex;
     border-bottom: rgb(162, 162, 162) solid;
-    max-width: max-content;
+    max-width: fit-content;
 }
 
 #novidade2 {
