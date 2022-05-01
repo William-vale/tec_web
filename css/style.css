@@ -369,3 +369,155 @@ main #pontos #ponto1 {
     font-weight: bold;
     align-self: flex-start;
 }
+
+
+
+#secao4 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 150px;
+}
+
+#secao4 #novidades{
+    max-width: 65%;
+    margin-right: 25px;
+}
+
+#secao4 #novidades h2{
+    font-size: 2em;
+    margin: 10px 0px 40px 0px;
+}
+
+#img_novidades ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    height: 135px;
+}
+
+#secao4 #img_novidades img{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    height: 150px;
+    width: 225px;
+    background-color: gray;
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+
+#secao4 #img_novidades img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+#novidade1{
+    display: flex;
+    border-bottom: rgb(162, 162, 162) solid;
+    max-width: fit-content;
+}
+
+#novidade2{
+    display: flex;
+    border-bottom: rgb(162, 162, 162) solid;
+    max-width: fit-content;
+    margin-top: 15px;
+}
+
+#novidade3{
+    display: flex;
+    max-width: fit-content;
+    margin-top: 15px;
+}
+
+#novidade1 div{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+#novidade1 button{
+    color: white;
+    background-color: gray;
+    padding: 3px 15px 1px 15px;
+    border-radius: 15px;
+}
+
+#novidade2 div{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+#novidade2 button{
+    color: white;
+    background-color: gray;
+    padding: 3px 15px 1px 15px;
+    border-radius: 15px;
+}
+
+#novidade3 div{
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+#novidade3 button{
+    color: white;
+    background-color: gray;
+    padding: 3px 15px 1px 15px;
+    border-radius: 15px;
+}
+
+@media(max-width: 1288px){
+    #img_novidades ul{
+        overflow: auto;
+    }
+    #img_novidades button{
+        display: none;
+    }
+}
+
+
+#secao4 .sobre h2{
+    font-size: 2em;
+    margin: 10px 0px 30px 0px;
+}
+
+#secao4 .sobre {
+    flex-basis: 35%;
+}
+
+.sobre-content h2{
+    margin-bottom: 15px;
+}
+
+
+.editorial h2{
+    margin-top: 20px;
+    padding-top: 20px;   
+}
+
+.editorial-content {
+    margin-bottom: 15px;
+    margin-top: 15px;    
+}
+
+.editorial ul {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.editorial ul li {
+    margin-bottom: 20px;
+}
+
+
+.redes-sociais {
+    list-style: none;
+    font-size: 12px;
+    
+}
+
+.redes-sociais i{
+    font-size: 30px;
+    padding-right: 20px;
+}
