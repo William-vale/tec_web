@@ -75,8 +75,7 @@ main section #elenco ul li {
     color: black;
 }
 
-/*  */
-
+/* Main */
 main {
     padding: 30px 20px;
     background-color: rgb(197, 203, 139);
@@ -372,8 +371,7 @@ main #pontos #ponto1 {
     align-self: flex-start;
 }
 
-/* Parte da Flaviane e Jonas */
-
+/* Seção 3 */
 .secao3 {
     display: flex;
     flex-direction: column;
@@ -427,7 +425,7 @@ main #pontos #ponto1 {
     cursor: pointer;
 }
 
-
+/* Seção 4 */
 #secao4 {
     display: flex;
     flex-direction: row;
@@ -471,7 +469,7 @@ main #pontos #ponto1 {
 #novidade1 {
     display: flex;
     border-bottom: rgb(162, 162, 162) solid;
-    max-width: fit-content;
+    max-width: max-content;
 }
 
 #novidade2 {
@@ -578,3 +576,13 @@ main #pontos #ponto1 {
     font-size: 30px;
     padding-right: 20px;
 }
+
+/* Rodapé */
+#rodape {
+    background-color: rgb(129, 133, 86);
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+
